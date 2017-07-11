@@ -1,5 +1,12 @@
 <footer>
-  <p>Footer</p>
+  <ul id="spherelink">
+    <li><a class="fa fa-facebook" href=""></a></li>
+    <li><a class="fa fa-twitter" href=""></a></li>
+    <li><a class="fa fa-linkedin" href=""></a></li>
+  </ul>
+  <div id="footinfo">
+    <p>Copyright &copy <?php bloginfo(name); ?></p>
+  </div>
 </footer>
 <?php wp_footer(); ?>
 <!-- Scripts -->
