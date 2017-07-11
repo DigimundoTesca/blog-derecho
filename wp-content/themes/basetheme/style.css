@@ -65,6 +65,7 @@ h4 {
 }
 body {
   font-family: 'Titillium Web', sans-serif;
+  overflow: hidden;
 }
 a {
   cursor: pointer;
@@ -130,8 +131,7 @@ footer {
   transition: 1s;
 }
 #mobileMenu.active {
-  width: 0px;
-  height: 0px;
+  right: -300px;
   transition: 1s;
 }
 #mobileMenu .links li {
