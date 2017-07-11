@@ -142,12 +142,14 @@ footer {
   line-height: 40px;
 }
 .linksli {
-  transition: 1s;
+  visibility: hidden;
   display: none;
+  transition: visibility 1s, display 2s;
 }
 .linksli.active {
-  transition: 1s;
-  display: inline;
+  visibility: visible;
+  display: initial;
+  transition: visibility 1s, display 2s;
 }
 #mobileMenu .links li:hover {
   background-color: #E96D71;
