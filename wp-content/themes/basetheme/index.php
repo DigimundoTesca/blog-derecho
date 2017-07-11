@@ -3,7 +3,7 @@
   <?php get_template_part( 'banner' );  ?>
 </div>
 <div id="mainContainer">
-  Prueba
+  <p>Prueba</p>
 
 </div>
 <?php get_footer(); ?>

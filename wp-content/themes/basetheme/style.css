@@ -34,8 +34,13 @@ a:link, a:visited, a:active {
 a:hover {
   color: #fff;
 }
-footer {
+body {
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+}
+footer {
+  width: 90%;
+  background-color: #FFF;
+  margin: 0 auto;
 }
 /*Hamburger icon*/
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
@@ -181,9 +186,8 @@ footer {
 }
 /*Container styles*/
 #mainContainer {
-  width: 100%;
+  width: 90%;
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+  margin: 0 auto;
+  background-color: #FFF;
 }
