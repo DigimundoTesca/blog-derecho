@@ -34,6 +34,9 @@ a:link, a:visited, a:active {
 a:hover {
   color: #fff;
 }
+footer {
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+}
 /*Hamburger icon*/
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 25px;
@@ -82,11 +85,9 @@ a:hover {
   padding: 0;
 }
 #mobileMenu {
-  top: 300px;
-  height: 100vh;
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
-  position: fixed;
-  right: 0;
+  position: absolute;
+  right: -20px;
   transition: 0.5s;
 }
 #mobileMenu.active {
@@ -97,12 +98,11 @@ a:hover {
   text-decoration: none;
   list-style: none;
   text-align: center;
-  height: 50px;
   border-bottom: 1px solid #FFFFFF;
   line-height: 40px;
 }
 #mobileMenu .links li:hover {
-  background-color: #56d4f6;
+  background-color: #E96D71;
 }
 #mobileMenu a {
   color: #ffffff;
@@ -111,6 +111,7 @@ a:hover {
   padding: 0;
   height: inherit;
   width: 100%;
+  text-decoration: none;
   text-align: center;
   word-spacing: 5px;
 }
@@ -125,7 +126,6 @@ a:hover {
 #banner {
   width: 100%;
   height: 300px;
-  overflow: hidden;
   position: relative;
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.6;
   z-index: 0;
 }
 #homebanner img {
@@ -179,8 +179,11 @@ a:hover {
 #bannerMenu .links {
   display: block;
 }
-.mobileMenu .links a, li {
-  /*display: block;*/
-  list-style: none;
-  text-decoration: none;
+/*Container styles*/
+#mainContainer {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
 }
