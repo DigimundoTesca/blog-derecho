@@ -227,7 +227,7 @@ footer {
   cursor: pointer;
 }
 #bannerMenu .links {
-  display: block;
+  display: grid;
 }
 /*Container styles*/
 #mainContainer {
