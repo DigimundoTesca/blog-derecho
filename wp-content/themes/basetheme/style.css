@@ -65,7 +65,7 @@ h4 {
 }
 body {
   font-family: 'Titillium Web', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 a {
   cursor: pointer;
@@ -232,7 +232,7 @@ footer {
 /*Container styles*/
 #mainContainer {
   width: 90%;
-  height: 100vh;
   margin: 0 auto;
+  padding-bottom: 20px;
   background-color: #FFF;
 }

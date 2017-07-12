@@ -1,4 +1,11 @@
 <?php
+//Adding stylesheets
+add_action('wp_enqueue_scripts','_adding_stylesheet');
+ function _adding_stylesheet(){
+ 	wp_register_style('style',get_template_directory_uri().'/style.css',array(),'1.0 ');
+ 	wp_enqueue_style('style');
+ }
+
 //Action that call javascript file on themebase assets/js
 add_action( 'wp_enqueue_scripts', '_adding_scripts',100 ); 
 function _adding_scripts() {

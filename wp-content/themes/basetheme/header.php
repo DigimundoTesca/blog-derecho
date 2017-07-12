@@ -24,6 +24,5 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo(stylesheet_url); ?>">
 </head>
 <body>
