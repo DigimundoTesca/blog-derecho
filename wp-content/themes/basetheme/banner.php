@@ -12,7 +12,7 @@ Template Name: banner
   <div id="bannerMenu">
     <a class="logoLink" href="<?php esc_url(home_url('/')); ?>">
       <span class="logo">
-        Blog Derecho
+        <?php bloginfo(name); ?>
       </span>
     </a>
     <nav class="mainMenu"> <!-- Burger menu -->

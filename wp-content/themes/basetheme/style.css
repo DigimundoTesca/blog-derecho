@@ -50,7 +50,7 @@ Text Domain: Derecho Anahuac
   top: 13px;
   transform: rotate(-135deg);
 }
-
+/*Initial styles for DOM*/
 h1,h2,h3,h4 {
   font-family: 'Varela Round', sans-serif;
 }
@@ -84,7 +84,8 @@ footer {
   background-color: #FFF;
   margin: 0 auto;
 }
-#spherelink {
+/*Styles for footer icons*/
+#spherelink { 
   width: 90%;
   margin: 0 auto;
   padding: 0;
@@ -116,7 +117,7 @@ footer {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-/*Menus behavior*/
+/*Menu behavior*/
 #mobileMenu ul {
   width: 250px;
   margin: 0;
@@ -170,9 +171,11 @@ footer {
   float: right;
   font-size: 30px;
 }
+/*Menu for biger screens hidden by default*/
 #largeMenu {
   display: none;
 }
+/*Banner styles*/
 #banner {
   width: 100%;
   height: 300px;
@@ -199,9 +202,6 @@ footer {
   background: #FFF;
   border-radius: 9px;
 }
-#homebanner .home {
-  background-image: url('../basetheme/assets/images/derecho.jpg');
-}
 #bannerMenu {
   width: 90%;
   height: 50px;
@@ -222,6 +222,10 @@ footer {
 #bannerMenu .links {
   display: grid;
 }
+/*Banner section background images*/
+#homebanner .home {
+  background-image: url('../basetheme/assets/images/derecho.jpg');
+}
 /*Container styles*/
 #mainContainer {
   width: 90%;
@@ -229,7 +233,6 @@ footer {
   padding-bottom: 20px;
   background-color: #FFF;
 }
-
 
 
 /*Tablet screen styles*/

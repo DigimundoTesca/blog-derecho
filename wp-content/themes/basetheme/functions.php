@@ -23,6 +23,7 @@ function _adding_scripts() {
   wp_register_script('my_custom_script', get_template_directory_uri() . '/assets/js/theme-scripts.js', array('jquery'),'1', true);
   //Js load
   wp_enqueue_script('my_custom_script');
+  wp_enqueue_script('jquery');
 }
 add_action( 'wp_enqueue_scripts', '_adding_scripts',100 ); 
 
