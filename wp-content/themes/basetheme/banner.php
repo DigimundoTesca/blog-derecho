@@ -3,8 +3,7 @@
 Template Name: banner
 */
 ?>
-<header id="banner">
-  <img src="" alt="Backgorund image">
+<header id="banner" class="home">
   <h1>derecho</h1>
   <div class="separator">
     <span></span>
