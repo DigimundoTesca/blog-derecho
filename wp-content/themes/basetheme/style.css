@@ -220,6 +220,10 @@ footer {
   position: absolute;
   bottom: 0;
 }
+#bannerMenu .logoLink {
+  text-decoration: none;
+  list-style: none;
+}
 #bannerMenu .logo {
   font-size: 25px;
   text-decoration-color: #fff;
