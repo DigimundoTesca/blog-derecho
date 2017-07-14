@@ -252,6 +252,9 @@ footer {
   .mainMenu {
     display: none;
   }
+  #mobileMenu {
+    display: none;
+  }
   #largeMenu {
     display: inline-block;
     float: right;
@@ -265,5 +268,10 @@ footer {
     text-decoration: none;
     margin-left: 5px;
     font-size: 15px;
+  }
+  #largeMenu .menu-links a:hover {
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgba(255,255,255,0.4);
   }
 }
