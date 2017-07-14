@@ -269,4 +269,9 @@ footer {
     margin-left: 5px;
     font-size: 15px;
   }
+  #largeMenu .menu-links a:hover {
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgba(255,255,255,0.4);
+  }
 }
