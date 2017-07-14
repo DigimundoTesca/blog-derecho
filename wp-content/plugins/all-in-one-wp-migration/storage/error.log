@@ -1,0 +1,9 @@
+Jul 14 2017 18:09:18
+{"Number":2,"Message":"unlink(C:\\Users\\Itzli\\Documents\\github\\blog-derecho\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\2n6j4be1weqy\\filemap.list): Resource temporarily unavailable","File":"C:\\Users\\Itzli\\Documents\\github\\blog-derecho\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Jul 14 2017 18:09:18
+{"Number":2,"Message":"unlink(C:\\Users\\Itzli\\Documents\\github\\blog-derecho\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\2n6j4be1weqy\\localhost-20170714-180911-624.wpress): Resource temporarily unavailable","File":"C:\\Users\\Itzli\\Documents\\github\\blog-derecho\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":49}
+
+Jul 14 2017 18:09:18
+{"Number":2,"Message":"rmdir(C:\\Users\\Itzli\\Documents\\github\\blog-derecho\\wp-content\\plugins\\all-in-one-wp-migration\\storage\\2n6j4be1weqy): Directory not empty","File":"C:\\Users\\Itzli\\Documents\\github\\blog-derecho\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\filesystem\\class-ai1wm-directory.php","Line":54}
+
