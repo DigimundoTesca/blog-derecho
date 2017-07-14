@@ -252,6 +252,9 @@ footer {
   .mainMenu {
     display: none;
   }
+  #mobileMenu {
+    display: none;
+  }
   #largeMenu {
     display: inline-block;
     float: right;
