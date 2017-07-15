@@ -10,7 +10,7 @@ Template Name: banner
   </div>
   <h4><?php the_subtitle(); ?></h4>
   <div id="bannerMenu">
-    <a class="logoLink" href="<?php esc_url(home_url('/')); ?>">
+    <a class="logoLink" href="<?php echo esc_url( home_url( '/' ) ); ?>">
       <span class="logo">
         <?php bloginfo(name); ?>
       </span>
