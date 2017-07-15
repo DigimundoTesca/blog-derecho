@@ -1,4 +1,12 @@
 <?php
+
+//Add thumbnail images
+function theme_setup() {
+  add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'theme_setup');
+
+
 //Adding stylesheets
 function _adding_stylesheet(){
   //Style register

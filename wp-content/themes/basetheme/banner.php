@@ -3,8 +3,9 @@
 Template Name: banner
 */
 ?>
-<header id="banner" class="home">
-  <h1>derecho</h1>
+<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+<header id="banner" class="home" style="background-image: url('<?php echo $thumb['0'];?>')">
+  <h1><?php the_title(); ?></h1>
   <div class="separator">
     <span></span>
   </div>
