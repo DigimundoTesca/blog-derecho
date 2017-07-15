@@ -222,10 +222,6 @@ footer {
 #bannerMenu .links {
   display: grid;
 }
-/*Banner section background images*/
-#homebanner .home {
-  background-image: url('../basetheme/assets/images/derecho.jpg');
-}
 /*Container styles*/
 #mainContainer {
   width: 90%;
