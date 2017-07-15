@@ -9,7 +9,7 @@ Template Name: banner
   <div class="separator">
     <span></span>
   </div>
-  <h4>Investigación jurídica y actualidad</h4>
+  <h4><?php the_subtitle(); ?></h4>
   <div id="bannerMenu">
     <a class="logoLink" href="<?php esc_url(home_url('/')); ?>">
       <span class="logo">
