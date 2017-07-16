@@ -4,6 +4,9 @@
   <div id="mainContainer">
     <?php the_content(); ?>
     <div id="projects">
+      <p class="mobiletext">
+        ¡Da click en las imagenes!
+      </p>
       <div class="projectContainer">
         <div class="ih-item square effect6 from_top_and_bottom"><a href="#">
           <div class="img"><img src="<?php the_field('imagen-proyecto_1') ?>" alt="Imagen de Proyecto"></div>

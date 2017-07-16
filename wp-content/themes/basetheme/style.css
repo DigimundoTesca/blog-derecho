@@ -79,11 +79,15 @@ a:hover {
 }
 body {
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+  background-image: url(assets/images/bck3.jpg);
+  background-repeat: repeat;
 }
 footer {
+  padding-top: 20px;
   width: 90%;
   background-color: #FFF;
   margin: 0 auto;
+  opacity: 0.9;
 }
 /*Styles for footer icons*/
 #spherelink { 
@@ -232,6 +236,7 @@ footer {
   padding-bottom: 20px;
   background-color: #FFF;
   text-align: justify;
+  opacity: 0.9;
 }
 /*Projects in "about us" styles*/
 #projects {
@@ -242,6 +247,12 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+#projects .mobiletext {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 .projectContainer {
   min-width: 250px;
@@ -258,9 +269,12 @@ footer {
   background-color: #E96D71;
   margin-top: 20px;
 }
+.projectButton:hover {
+  background-color: #F58F66;
+  box-shadow: 2px 2px 7px black;
+}
 .projectButton a {
-  color: #;
-  /*font-size: 13px;*/
+  font-size: 13px;
   font-weight: bold;
   text-align:center;
   text-transform: uppercase;
@@ -281,6 +295,9 @@ footer {
   }
   #banner h4 {
     font-size: 35px;
+  }
+  #bannerMenu .logo {
+    font-size: 25px;
   }
   .mainMenu {
     display: none;
@@ -305,5 +322,63 @@ footer {
   #largeMenu .menu-links a:hover {
     border-radius: 5px;
     background-color: rgba(255,255,255,0.4);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #bannerMenu .logo {
+    font-size: 30px;
+  }
+  #largeMenu .menu-links a {
+    font-size: 18px;
+  }
+}
+
+
+
+
+/*PC screen styles*/
+@media screen and (min-width: 1200px) {
+  #banner {
+    height: 500px;
+  }
+  #banner h1 {
+    font-size: 80px;
+  }
+  .separator span {
+    height: 10px;
+  }
+  #banner h4 {
+    font-size: 55px;
+  }
+  #bannerMenu .logo {
+    font-size: 35px;
+  }
+  .mainMenu {
+    display: none;
+  }
+  #mobileMenu {
+    display: none;
+  }
+  #largeMenu {
+    display: inline-block;
+    float: right;
+  }
+  #largeMenu .menu-links li {
+    display: inline;
+    text-decoration: none;
+  }
+  #largeMenu .menu-links a {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  #largeMenu .menu-links a:hover {
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.4);
+  }
+  #projects .mobiletext {
+    display: none;
   }
 }
