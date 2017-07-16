@@ -87,7 +87,6 @@ footer {
   width: 90%;
   background-color: #FFF;
   margin: 0 auto;
-  opacity: 0.9;
 }
 /*Styles for footer icons*/
 #spherelink { 
@@ -236,7 +235,6 @@ footer {
   padding-bottom: 20px;
   background-color: #FFF;
   text-align: justify;
-  opacity: 0.9;
 }
 /*Projects in "about us" styles*/
 #projects {
