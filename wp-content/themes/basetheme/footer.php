@@ -5,7 +5,7 @@
     <li><a class="fa fa-linkedin" href=""></a></li>
   </ul>
   <div id="footinfo">
-    <p>Copyright &copy <?php bloginfo(name); ?></p>
+    <p>Copyright &#169; <?php bloginfo(name); ?></p>
   </div>
 </footer>
 <?php wp_footer(); ?>
