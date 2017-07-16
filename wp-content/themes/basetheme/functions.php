@@ -51,4 +51,10 @@ function dn_expire_psw_session() {
     }
 }
 add_action( 'wp', 'dn_expire_psw_session' );
+
+//Removes the 'Protected' string from title pages
+function change_protected_title_prefix() {
+    return '%s';
+}
+add_filter('protected_title_format', 'change_protected_title_prefix');
 ?>
