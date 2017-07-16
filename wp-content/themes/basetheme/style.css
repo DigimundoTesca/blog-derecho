@@ -209,6 +209,7 @@ footer {
   margin: 0 auto;
   position: absolute;
   bottom: 0;
+  z-index: 9;
 }
 #bannerMenu .logoLink {
   text-decoration: none;
