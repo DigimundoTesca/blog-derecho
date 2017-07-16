@@ -45,12 +45,12 @@ add_action( 'wp_default_scripts', function( $scripts ) {
 } );
 
 //Expires cookie for "jobs" page when user close the page
-function dn_expire_psw_session() {
-    if ( isset( $_COOKIE['wp-postpass_' . COOKIEHASH] ) ) {
-        setcookie('wp-postpass_' . COOKIEHASH, '', 0, COOKIEPATH);
-    }
-}
-add_action( 'wp', 'dn_expire_psw_session' );
+// function dn_expire_psw_session() {
+//     if ( isset( $_COOKIE['wp-postpass_' . COOKIEHASH] ) ) {
+//         setcookie('wp-postpass_' . COOKIEHASH, '', 0, COOKIEPATH);
+//     }
+// }
+// add_action( 'wp', 'dn_expire_psw_session' );
 
 //Removes the 'Protected' string from title pages
 function change_protected_title_prefix() {

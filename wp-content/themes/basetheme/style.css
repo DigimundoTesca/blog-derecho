@@ -278,6 +278,16 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
 }
+/*Job Board styles*/
+.sjb-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.sjb-page {
+    padding: 0 30px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+}
 
 
 /*Tablet screen styles*/

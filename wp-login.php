@@ -458,7 +458,7 @@ case 'postpass' :
 	} else {
 		$secure = false;
 	}
-	setcookie( 'wp-postpass_' . COOKIEHASH, $hasher->HashPassword( wp_unslash( $_POST['post_password'] ) ), $expire, COOKIEPATH, COOKIE_DOMAIN, $secure );
+	setcookie( 'wp-postpass_' . COOKIEHASH, $hasher->HashPassword( wp_unslash( $_POST['post_password'] ) ), time() + 1800, COOKIEPATH, COOKIE_DOMAIN, $secure );
 
 	wp_safe_redirect( wp_get_referer() );
 	exit();
