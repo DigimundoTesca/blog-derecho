@@ -33,7 +33,7 @@
             </div>
           </div>
           <div class="projectButton">
-            <a href="" >Conoce nuestros proyectos</a>
+            <a href="<?php echo get_bloginfo( 'url' ).'/proyectos'?>">Conoce nuestros proyectos</a>
           </div>
 
 
