@@ -17,8 +17,8 @@
   text-decoration: none;
 }
 .ih-item img {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
 }
 
 .ih-item.circle {
@@ -62,8 +62,8 @@
 
 .ih-item.square {
   position: relative;
-  max-width: 316px;
-  max-height: 216px;
+  max-width: 300px;
+  max-height: 200px;
   border: 8px solid #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
@@ -73,6 +73,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  padding-top: 20px;
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -3012,6 +3013,7 @@
   text-align: center;
   font-size: 17px;
   padding: 10px;
+  margin-top: 30px;
   background: #111111;
   margin: 30px 0 0 0;
   -webkit-transition: all 0.35s ease-in-out;
@@ -3024,6 +3026,7 @@
   position: relative;
   color: #bbb;
   padding: 5px;
+  padding-top: 20px;
   text-align: center;
   -webkit-transition: all 0.35s 0.1s linear;
   -moz-transition: all 0.35s 0.1s linear;
