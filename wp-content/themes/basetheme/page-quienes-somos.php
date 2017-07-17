@@ -5,12 +5,12 @@
     <?php the_content(); ?>
     <div id="projects">
       <p class="mobiletext">
-        ¡Da click en las imagenes!
+        ¡Toca las imagenes!
       </p>
       <?php 
       $args = array(
         'post_type' => 'proyectosblog',
-        'posts_per_page' => 3,
+        'posts_per_page' => 1000,
         'orderby' => 'title',
         'order' => 'ASC'
         );
