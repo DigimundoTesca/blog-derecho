@@ -193,6 +193,7 @@ footer {
   justify-content: center;
   align-content: center;
   color: white;
+  text-shadow: 3px 3px #000;
 }
 .separator {
   display: flex;
@@ -319,6 +320,7 @@ footer {
     display: none;
   }
   #largeMenu {
+    text-shadow: 2px 2px #000;
     display: inline-block;
     float: right;
   }
