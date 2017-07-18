@@ -283,6 +283,10 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
 }
+.ih-item img {
+    width: 150%;
+    height: 150%;
+}
 /*Projects page styles*/
 #mainProjects {
   width: 100%;
@@ -369,6 +373,10 @@ footer {
   #largeMenu .menu-links a:hover {
     border-radius: 5px;
     background-color: rgba(255,255,255,0.4);
+  }
+  .ih-item img {
+    width: 120%;
+    height: 120%;
   }
 }
 
