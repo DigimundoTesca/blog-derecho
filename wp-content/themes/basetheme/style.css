@@ -236,6 +236,60 @@ footer {
   background-color: #FFF;
   text-align: justify;
 }
+/*Container Post styles*/
+div.posts > * {
+  width: 80%;
+  margin: 0 auto;
+}
+.post_image {
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 230px;
+  padding-bottom: 30px;
+}
+.post_image img {
+  max-width: 100%;
+  height: auto;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+  align-items: center;
+}
+.author > *{
+  display: inline-block;
+}
+.author span {
+  font-style: italic;
+  color: #D34C2A;
+  margin-left: 5px;
+}
+.date time {
+  text-align: center;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #E96D71;
+}
+.author span.month, span.day {
+  display: block;
+  color: #fff;
+  font-style: normal;
+  margin: 0;
+}
+.post_button {
+  width: 200px;
+  background-color: #E96D71;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 5px;
+  border-radius: 5px;
+}
 /*Projects in "about us" styles*/
 #projects {
   width: 100%;

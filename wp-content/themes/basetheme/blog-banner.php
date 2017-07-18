@@ -1,14 +1,19 @@
 <?php
 /*
-Template Name: banner
+Template Name: blog-banner
 */
 ?>
-<header id="banner" class="home" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>')">
-  <h1><?php the_title(); ?></h1>
+<?php 
+    $blog_page = get_option('page_for_posts');
+    $image = get_post_thumbnail_id($blog_page);
+    $image = wp_get_attachment_image_src( $image, 'full');
+ ?>
+<header id="banner" class="home" style="background-image: url('<?php echo $image[0];?>')">
+  <h1><?php echo get_the_title($blog_page); ?></h1>
   <div class="separator">
     <span></span>
   </div>
-  <h4><?php the_subtitle(); ?></h4>
+  <h4><?php get_the_subtitle($blog_page); ?></h4>
   <div id="bannerMenu">
     <a class="logoLink" href="<?php echo get_bloginfo( 'url' ).'/blog'?>">
       <span class="logo">
