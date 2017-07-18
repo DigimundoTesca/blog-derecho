@@ -46,7 +46,7 @@ add_action( 'wp_default_scripts', function( $scripts ) {
 
 //Expires cookie for "jobs" page when user close the page
 function custom_password_cookie_expiry( $expires ) {
-    return (time()+1800);  // Make it a session cookie
+    return (-1);
 }
 add_filter( 'post_password_expires', 'custom_password_cookie_expiry' );
 
