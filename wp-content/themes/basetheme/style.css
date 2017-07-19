@@ -249,6 +249,7 @@ footer {
   max-height: 250px;
   min-height: 125px;
   overflow: hidden;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 #mainContainer .cut_image {
@@ -407,6 +408,7 @@ span.post_by {
     font-family: "Roboto", sans-serif;
     text-align: justify;
 }
+/*Comment Form in posts page styles*/
 
 
 /*Tablet screen styles*/

@@ -7,6 +7,7 @@
     <?php the_post_thumbnail(); ?>
   </div>
   <?php the_content(); ?>
+  <?php comment_form(); ?>
 </div>
 <?php endwhile ?>
 <?php get_footer(); ?>
