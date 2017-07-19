@@ -23,4 +23,9 @@
     </div>
   </div>
 <?php endwhile ?>
+<div id="paginationContainer">
+  <div class="pagination">
+    <?php echo paginate_links(); ?>
+  </div>
+</div>
 <?php get_footer(); ?>  

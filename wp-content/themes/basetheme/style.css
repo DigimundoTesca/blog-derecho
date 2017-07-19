@@ -228,7 +228,8 @@ footer {
   display: grid;
 }
 /*Container styles*/
-#mainContainer {
+#mainContainer,
+#paginationContainer {
   width: 80%;
   margin: 0 auto;
   padding: 5%;
@@ -523,7 +524,20 @@ form a:active,
 .reply a {
   color: #FFF;
 }
-
+/*Pagination styles*/
+.pagination {
+  margin-top: 20px;
+  background-color: #e1e1e1;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #000;
+}
+.pagination a {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
 
 /*Tablet screen styles*/
 @media screen and (min-width: 768px) {
