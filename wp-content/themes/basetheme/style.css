@@ -274,6 +274,7 @@ div.posts > * {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: inherit;
 }
 .author > *{
   display: inline-block;
@@ -310,7 +311,7 @@ span.post_by {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  padding: 0 5px;
+  padding: 2px 7px;
   border-radius: 5px;
 }
 /*Projects in "about us" styles*/
