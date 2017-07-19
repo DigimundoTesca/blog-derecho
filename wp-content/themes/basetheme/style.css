@@ -254,7 +254,15 @@ footer {
 }
 #mainContainer .cut_image {
   position: absolute;
-  bottom: -50px;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+.cut_image img {
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
 }
 #mainContainer p {
   width: 90%;
@@ -279,6 +287,9 @@ div.posts > * {
 }
 .author > *{
   display: inline-block;
+}
+.single_author {
+  margin-top: 30px;
 }
 .author span {
   font-style: italic;
@@ -424,7 +435,21 @@ span.post_by {
   bottom: 0;
 }
 /*Comment Form in posts page styles*/
-
+#mainComment {
+  min-width: 260px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#mainComment h3 {
+  font-size: 25px;
+}
+#mainComment form label {
+  display: block;
+}
+#mainComment textarea,
+#mainComment input {
+  width: inherit;
+}
 
 /*Tablet screen styles*/
 @media screen and (min-width: 768px) {
