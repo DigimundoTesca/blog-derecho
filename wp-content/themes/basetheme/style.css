@@ -267,7 +267,7 @@ div.posts > * {
   text-align: center;
   margin: 0 auto;
 }
-.post_image img {
+.post_image img, {
   max-width: 100%;
   height: auto;
 }
@@ -408,6 +408,21 @@ span.post_by {
     font-family: "Roboto", sans-serif;
     text-align: justify;
 }
+/*Single Posts styles*/
+.single_post_image {
+  margin: 0 auto;
+  width: 80%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.single_post_image img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+}
 /*Comment Form in posts page styles*/
 
 
@@ -460,6 +475,10 @@ span.post_by {
   }
   .date time {
     margin-left: 15px;
+  }
+  /*Single Posts styles*/
+  .single_post_image {
+    height: 200px;
   }
 }
 
@@ -518,5 +537,9 @@ span.post_by {
   }
   #projects .mobiletext {
     display: none;
+  }
+  /*Single Posts styles*/
+  .single_post_image {
+    height: 300px;
   }
 }
