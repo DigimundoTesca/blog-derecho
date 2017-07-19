@@ -17,9 +17,23 @@
       <span><?php the_field('autor') ?></span>
     </div>
     <?php the_content(); ?>
-    <div id="mainComment">
-      <?php comment_form(); ?>
+    <div class="postsComment commentLink">
+      <ul class="listComment">
+        <?php 
+        $comments = get_comments(array(
+          'posts_id' => $post->ID,
+          'status' => 'approve'
+          ));
+        wp_list_comments( array( 
+          'per_page' => 10,
+          'reverse_top_level' => false 
+          ), $comments);
+          ?>
+        </ul>
+      </div>
+      <div id="mainComment" class="commentLink">
+        <?php comment_form(); ?>
+      </div>
     </div>
-  </div>
-<?php endwhile ?>
-<?php get_footer(); ?>
+  <?php endwhile ?>
+  <?php get_footer(); ?>

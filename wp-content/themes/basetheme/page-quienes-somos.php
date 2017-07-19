@@ -22,8 +22,8 @@
           <a href="#">
             <div class="img"><img src="<?php the_post_thumbnail(); ?>" alt="Imagen de Proyecto">
             </div>
-            <div class="info">
-              <h3><?php the_title(); ?></h3>
+            <div id="info" class="info">
+              <h3 id="infoTitle"><?php the_title(); ?></h3>
               <?php the_content(); ?>
             </div>
           </a>
