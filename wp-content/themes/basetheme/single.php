@@ -21,7 +21,7 @@
       <ul class="listComment">
         <?php 
         $comments = get_comments(array(
-          'posts_id' => $post->ID,
+          'post_id' => $post->ID,
           'status' => 'approve'
           ));
         wp_list_comments( array( 
