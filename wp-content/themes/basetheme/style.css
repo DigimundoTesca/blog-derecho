@@ -421,9 +421,12 @@ span.post_by {
   margin: 0 auto;
 }
 .sjb-page {
-    padding: 0 30px;
-    font-family: "Roboto", sans-serif;
-    text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+.sjb-detail {
+  margin: 0 !important;
+  padding: 0 15px;
 }
 /*Single Posts styles*/
 .single_post_image {
