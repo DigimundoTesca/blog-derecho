@@ -549,6 +549,17 @@ form a:active,
 .pagination .current {
   font-weight: bold;
 }
+/*Styles for contact page*/
+#contactPage {
+  text-align: left;
+}
+#contactPage ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
 
 /*Tablet screen styles*/
 @media screen and (min-width: 768px) {
