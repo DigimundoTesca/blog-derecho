@@ -237,6 +237,11 @@ footer {
   background-color: #FFF;
   text-align: center;
 }
+.mainPostContainer{
+  width: 70%;
+  height: auto;
+  margin: 0;
+}
 #mainContainer h3 {
   display: block;
   text-align: center;
@@ -286,7 +291,7 @@ div.posts > * {
   height: auto;
 }
 .author {
-  display: flex;
+  display: inline;
   flex-direction: row;
   align-items: center;
   padding-left: inherit;
@@ -559,6 +564,16 @@ form a:active,
   margin: 0;
   padding: 0;
 
+}
+
+/*Styles for posts page: publish by*/
+@media screen and (min-width: 360px){
+  .author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: inherit;
+  }
 }
 
 /*Tablet screen styles*/
