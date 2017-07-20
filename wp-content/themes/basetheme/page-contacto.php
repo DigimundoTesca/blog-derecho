@@ -5,7 +5,6 @@
 		<div id="contactPage">
 			<?php the_content(); ?>
 		</div>
-		hola
 	</div>
 <?php endwhile ?>
 <?php get_footer(); ?>
