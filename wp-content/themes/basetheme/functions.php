@@ -95,4 +95,17 @@ function blog_projects() {
 
   register_post_type( 'proyectosblog', $args );
 }
+
+//Widget activation
+function my_widgets (){
+  register_sidebar( array( 
+    'name' => 'Blog sidebar',
+    'id' => 'blog_sidebar',
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+    ) );
+}
+add_action( 'widgets_init', 'my_widgets');
 ?>
