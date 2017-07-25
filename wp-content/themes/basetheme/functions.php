@@ -11,9 +11,11 @@ add_action( 'after_setup_theme', 'theme_setup');
 function _adding_stylesheet(){
   //Style register
   wp_register_style('ihover',get_template_directory_uri().'/assets/css/ihover.css',array(),'1.0 ');
+  wp_register_style('card',get_template_directory_uri().'/assets/css/card.css',array(),'1.0 ');
   wp_register_style('style',get_template_directory_uri('ihover').'/style.css',array(),'1.0 ');
   //Style display
   wp_enqueue_style('ihover');
+  wp_enqueue_style('card');
   wp_enqueue_style('style');
 }
 add_action('wp_enqueue_scripts','_adding_stylesheet');

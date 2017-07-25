@@ -67,6 +67,8 @@ h4 {
 body {
   font-family: 'Titillium Web', sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a {
   cursor: pointer;
@@ -447,7 +449,8 @@ span.post_by {
 }
 /*Job Board styles*/
 .sjb-container {
-  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
   margin: 0 auto;
 }
 .sjb-page {
