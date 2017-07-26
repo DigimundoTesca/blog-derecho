@@ -82,12 +82,15 @@ a:hover {
 body {
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
   background-image: url(assets/images/bck3.jpg);
-  background-repeat: repeat;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 footer {
   padding-top: 20px;
-  width: 90%;
-  background-color: #FFF;
+  width: 100%;
+  background-color: rgba(255,255,255,0.95);
   margin: 0 auto;
 }
 /*Styles for footer icons*/
@@ -231,19 +234,19 @@ footer {
 }
 /*Container styles*/
 #mainContainer {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 5%;
   padding-bottom: 20px;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,0.95);
   text-align: center;
 }
 #paginationContainer {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 5%;
   padding-bottom: 20px;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,0.95);
   text-align: center;
 }
 #mainContainer h3 {
@@ -381,7 +384,7 @@ span.post_by {
   font-weight: bold;
 }
 .projectContainer {
-  min-width: 250px;
+  width: 250px;
   padding: 10px;
 }
 .truncate p {
@@ -433,6 +436,10 @@ span.post_by {
   justify-content: center;
   align-items: center;
   border-top: 3px solid #f0f0f0; 
+}
+.mainProjectContainer h3 {
+  width: 100%;
+  margin-bottom: 0;
 }
 .mainProjectContainer .img {
   text-align: center;

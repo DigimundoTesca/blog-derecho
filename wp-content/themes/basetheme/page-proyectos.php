@@ -15,12 +15,10 @@
       while ($proye->have_posts()): $proye->the_post();
       ?>
       <div class="mainProjectContainer">
+      <h3><?php the_title(); ?></h3>
         <div class="img"><?php the_post_thumbnail(); ?>
         </div>
-        <div>
-          <h3><?php the_title(); ?></h3>
-          <?php the_content(); ?>
-        </div>
+        <?php the_content(); ?>
       </div>
     <?php endwhile; wp_reset_postdata(); ?>
   </div>
