@@ -11,4 +11,9 @@ jQuery(document).ready(function(){
   $('.projectContainer a').click(function(event){
     event.preventDefault();
   });
+
+  // Card functions
+  $('.post-module').hover(function(){
+    $(this).toggleClass('hover');
+  });
 });

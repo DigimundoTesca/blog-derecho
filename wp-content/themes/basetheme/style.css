@@ -67,6 +67,8 @@ h4 {
 body {
   font-family: 'Titillium Web', sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a {
   cursor: pointer;
@@ -80,12 +82,15 @@ a:hover {
 body {
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
   background-image: url(assets/images/bck3.jpg);
-  background-repeat: repeat;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 footer {
   padding-top: 20px;
-  width: 90%;
-  background-color: #FFF;
+  width: 100%;
+  background-color: rgba(255,255,255,0.95);
   margin: 0 auto;
 }
 /*Styles for footer icons*/
@@ -228,19 +233,21 @@ footer {
   display: grid;
 }
 /*Container styles*/
-#mainContainer,
-#paginationContainer {
-  width: 80%;
+#mainContainer {
+  width: 70%;
   margin: 0 auto;
   padding: 5%;
   padding-bottom: 20px;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,0.95);
   text-align: center;
 }
-.mainPostContainer{
+#paginationContainer {
   width: 70%;
-  height: auto;
-  margin: 0;
+  margin: 0 auto;
+  padding: 5%;
+  padding-bottom: 20px;
+  background-color: rgba(255,255,255,0.95);
+  text-align: center;
 }
 #mainContainer h3 {
   display: block;
@@ -280,9 +287,32 @@ footer {
   margin: 30px auto;
   text-align: justify;
 }
+/*Events page*/
+.eventContainer {
+  display: inherit !important;
+}
+.ai1ec-actions {
+  display: none;
+}
+/*Posts column*/
+#postsColumn {
+  width: 100%;
+  margin-left: 0;
+}
+#widgetColumn {
+  width: 100%;
+}
 /*Container Post styles*/
+div#eachPost {
+  margin-bottom: 30px;
+   margin-top: 10px; 
+}
+div.posts {
+  display: flex;
+  flex-direction: column-reverse;
+}
 div.posts > * {
-  width: 85%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -354,7 +384,7 @@ span.post_by {
   font-weight: bold;
 }
 .projectContainer {
-  min-width: 250px;
+  width: 250px;
   padding: 10px;
 }
 .truncate p {
@@ -407,6 +437,10 @@ span.post_by {
   align-items: center;
   border-top: 3px solid #f0f0f0; 
 }
+.mainProjectContainer h3 {
+  width: 100%;
+  margin-bottom: 0;
+}
 .mainProjectContainer .img {
   text-align: center;
   padding-top: 30px;
@@ -422,7 +456,8 @@ span.post_by {
 }
 /*Job Board styles*/
 .sjb-container {
-  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
   margin: 0 auto;
 }
 .sjb-page {
@@ -563,7 +598,63 @@ form a:active,
   list-style: none;
   margin: 0;
   padding: 0;
-
+}
+/*Sidebar styles*/
+#sideWidget {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid #e1e1e1;
+}
+#sideWidget h3 {
+  font-size: 20px;
+}
+#sideWidget li {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  height: 23px;
+}
+#sideWidget a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#sideWidget ul li a:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  content: '\f061';
+}
+#sideWidget a:hover {
+  color: #E96D71;
+  background-color: rgba(250,215,161,1);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#sideWidget form.searchform {
+  position: relative;
+}
+#sideWidget form.searchform #searchsubmit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 24px;
+  background-color: #E96D71;
+  text-indent: -9999px;
+  background-image: url(assets/images/search.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+}
+#sideWidget .ai1ec-agenda-widget-view {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /*Styles for posts page: publish by*/
@@ -573,6 +664,10 @@ form a:active,
     flex-direction: row;
     align-items: center;
     padding-left: inherit;
+  }
+  /*Sidebar styles*/
+  input#s {
+    width: 80%;
   }
 }
 
@@ -633,6 +728,10 @@ form a:active,
   .single_post_image {
     height: 200px;
   }
+  /*Sidebar styles*/
+  input#s {
+    width: 85%;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -644,6 +743,25 @@ form a:active,
   }
 }
 
+@media screen and (min-width: 1024px) {
+  /*Posts page styles*/
+  .posts {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  /*Posts column*/
+  #postsColumn {
+    width: 70%;
+    margin-left: 0;
+  }
+  #widgetColumn {
+    width: 30%;
+  }
+  #sideWidget form.searchform #searchsubmit {
+    top: 18px;
+    right: 0;
+  }
+}
 
 
 
