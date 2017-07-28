@@ -89,7 +89,7 @@ body {
 }
 footer {
   padding-top: 20px;
-  width: 100%;
+  width: 80%;
   background-color: rgba(255,255,255,0.95);
   margin: 0 auto;
 }
@@ -634,6 +634,9 @@ form a:active,
   cursor: pointer;
   border-radius: 5px;
 }
+#sideWidget label.screen-reader-text {
+  display: none;
+}
 #sideWidget form.searchform {
   position: relative;
 }
@@ -667,7 +670,7 @@ form a:active,
   }
   /*Sidebar styles*/
   input#s {
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -728,10 +731,6 @@ form a:active,
   .single_post_image {
     height: 200px;
   }
-  /*Sidebar styles*/
-  input#s {
-    width: 85%;
-  }
 }
 
 @media screen and (min-width: 900px) {
@@ -758,7 +757,6 @@ form a:active,
     width: 30%;
   }
   #sideWidget form.searchform #searchsubmit {
-    top: 18px;
     right: 0;
   }
 }
