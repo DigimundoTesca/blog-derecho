@@ -34,15 +34,17 @@ Template Name: banner
         ?>
       </ul>
     </nav>
-    <nav id="largeMenu"> <!-- Mobile menu -->
+    <div id="largeMenu">
       <?php 
         $args = array(
           'theme_location' => 'header-menu',
           'container' => 'nav',
-          'container_class' => 'menu-links'
+          'container_class' => 'menu-links',
+          'link_before' => '<span class="menu-text">',
+          'link_after' => '</span>'
           );
         wp_nav_menu($args);
       ?>
-    </nav>
+    </div>
   </div>
 </header>

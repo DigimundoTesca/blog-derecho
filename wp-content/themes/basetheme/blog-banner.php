@@ -44,7 +44,9 @@ Template Name: blog-banner
         $args = array(
           'theme_location' => 'header-menu',
           'container' => 'nav',
-          'container_class' => 'menu-links'
+          'container_class' => 'menu-links',
+          'link_before' => '<span class="menu-text">',
+          'link_after' => '</span>'
           );
         wp_nav_menu($args);
       ?>

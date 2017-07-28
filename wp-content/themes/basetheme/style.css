@@ -502,7 +502,7 @@ form a:active,
   padding-top: 5px;
 }
 #mainComment {
-  min-width: 260px;
+  min-width: 200px;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -718,8 +718,15 @@ form a:active,
     float: right;
   }
   #largeMenu .menu-links li {
-    display: inline;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-flex;
     text-decoration: none;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 10px;
   }
   #largeMenu .menu-links a {
     list-style: none;
@@ -729,7 +736,35 @@ form a:active,
   }
   #largeMenu .menu-links a:hover {
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.4);
+  }
+  /*Changing text for icons*/
+  .menu-text {
+    display: none;
+  }
+  nav.menu-links ul li a:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  nav.menu-links li:nth-child(1) a::before{
+    content: '\f015';
+  }
+  nav.menu-links li:nth-child(2) a::before {
+    content: '\f0b1 ';
+  }
+  nav.menu-links li:nth-child(3) a::before {
+    content: '\f02d  ';
+  }
+  nav.menu-links li:nth-child(4) a::before {
+    content: '\f073  ';
+  }
+  nav.menu-links li:nth-child(5) a::before {
+    content: '\f2b5  ';
+  }
+  nav.menu-links li:nth-child(6) a::before {
+    content: '\f003  ';
   }
   .ih-item img {
     width: 120%;
@@ -827,5 +862,30 @@ form a:active,
   /*Single Posts styles*/
   .single_post_image {
     height: 300px;
+  }
+  /*Changing text for icons*/
+  #largeMenu .menu-links li {
+    background: none;
+  }
+  .menu-text {
+    display: initial;
+  }
+  nav.menu-links li:nth-child(1) a::before{
+    content: '';
+  }
+  nav.menu-links li:nth-child(2) a::before {
+    content: ' ';
+  }
+  nav.menu-links li:nth-child(3) a::before {
+    content: '';
+  }
+  nav.menu-links li:nth-child(4) a::before {
+    content: '';
+  }
+  nav.menu-links li:nth-child(5) a::before {
+    content: '';
+  }
+  nav.menu-links li:nth-child(6) a::before {
+    content: '';
   }
 }
