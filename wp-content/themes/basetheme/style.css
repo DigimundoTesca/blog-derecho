@@ -22,7 +22,7 @@ Text Domain: Derecho Anahuac
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #E96D71;
+  background-color: #B0B0B0;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -90,7 +90,7 @@ body {
 footer {
   padding-top: 20px;
   width: 80%;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255,255,255,0.9);
   margin: 0 auto;
 }
 /*Styles for footer icons*/
@@ -113,10 +113,10 @@ footer {
   text-decoration: none;
   border-radius: 100%;
   font-size: 25px;
-  background-color: #404040;
+  background-color: #182633;
 }
 #spherelink li:hover {
-  background-color: #4531CD;
+  background-color: #B0B0B0;
 }
 #spherelink li a {
   text-decoration: none;
@@ -135,20 +135,23 @@ footer {
 #mobileMenu {
   width: 250px;
   height: 246px;
-  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
   position: absolute;
-  right: -15px;
+  right: -35px;
   transition: 1s;
+  background-image: url(assets/images/menubck.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #mobileMenu.active {
-  right: -300px;
+  right: -500px;
   transition: 1s;
 }
 #mobileMenu .links li {
   text-decoration: none;
   list-style: none;
   text-align: center;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFF;
   line-height: 40px;
 }
 .linksli {
@@ -162,7 +165,7 @@ footer {
   transition: 1s;
 }
 #mobileMenu .links li:hover {
-  background-color: #E96D71;
+  background-color: #182633;
 }
 #mobileMenu a {
   color: #ffffff;
@@ -171,6 +174,8 @@ footer {
   padding: 0;
   height: inherit;
   width: 100%;
+  text-shadow: 2px 2px #000;
+  letter-spacing: 2px;
   text-decoration: none;
   text-align: center;
   word-spacing: 5px;
@@ -212,7 +217,7 @@ footer {
   border-radius: 9px;
 }
 #bannerMenu {
-  width: 90%;
+  width: 80%;
   height: 50px;
   margin: 0 auto;
   position: absolute;
@@ -238,16 +243,18 @@ footer {
   margin: 0 auto;
   padding: 5%;
   padding-bottom: 20px;
-  background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255,255,255,0.9);
   text-align: center;
 }
 #paginationContainer {
-  width: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin: 0 auto;
-  padding: 5%;
   padding-bottom: 20px;
-  background-color: rgba(255,255,255,0.95);
-  text-align: center;
+  padding-top: 20px;
+  background-color: rgba(255,255,255,0.9);
 }
 #mainContainer h3 {
   display: block;
@@ -535,7 +542,7 @@ form a:active,
 }
 /*Styles for comments showed*/
 .listComment .comment {
-  background-image: linear-gradient( 135deg, rgba(250,215,161,0.5) 0%, rgba(233,109,113,0.5) 100%);
+  background-color:rgba(233,109,113,0.5);
   margin: 20px 0;
   padding: 20px;
   border-radius: 20px;
@@ -572,11 +579,11 @@ form a:active,
 /*Pagination styles*/
 .pagination {
   margin-top: 20px;
-  background-color: #e1e1e1;
+  background-color: #E96D71;
   padding: 20px;
   display: inline-block;
   border-radius: 20px;
-  color: #000;
+  color: #FFF;
 }
 .pagination a {
   cursor: pointer;
@@ -672,6 +679,13 @@ form a:active,
   input#s {
     width: 95%;
   }
+}
+/*Styles for mobile menu*/
+@media screen and (min-width: 600px){
+  #mobileMenu {
+  right: -60px;
+  position: 
+}
 }
 
 /*Tablet screen styles*/
