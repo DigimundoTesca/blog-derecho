@@ -1,5 +1,14 @@
 <?php
 
+// Login styles
+function admin_styles(){
+  wp_enqueue_style( 'login.css',get_template_directory_uri().'/assets/css/login.css', false );
+  wp_enqueue_script( 'jquery' );
+  wp_enqueue_script( 'login.js',get_template_directory_uri().'/assets/js/login.js', array('jquery'), 1.0, true );
+}
+add_action( 'login_enqueue_scripts','admin_styles', 10 );
+
+
 //Add thumbnail images
 function theme_setup() {
   add_theme_support( 'post-thumbnails' );

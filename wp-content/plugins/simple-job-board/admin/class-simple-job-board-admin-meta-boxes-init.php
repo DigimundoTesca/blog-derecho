@@ -79,7 +79,8 @@ class Simple_Job_Board_Meta_Boxes_Init {
         
         global $wp_post_types;
         add_meta_box('jobpost_metas', sprintf(esc_html__('%s Features', 'simple-job-board'), $wp_post_types['jobpost']->labels->singular_name), array('Simple_Job_Board_Meta_Box_Job_Features', 'sjb_meta_box_output'), 'jobpost', 'normal', 'high');
-        add_meta_box('jobpost_application_fields', esc_html__('Application Form Fields', 'simple-job-board'), array('Simple_Job_Board_Meta_Box_Job_Application', 'sjb_meta_box_output'), 'jobpost', 'normal', 'high');
+        add_meta_box('jobpost_application_fields', esc_html__('
+Campos de formulario de solicitud', 'simple-job-board'), array('Simple_Job_Board_Meta_Box_Job_Application', 'sjb_meta_box_output'), 'jobpost', 'normal', 'high');
         add_meta_box('simple-job-board-post_options', esc_html__('Job Data', 'simple-job-board'), array('Simple_Job_Board_Meta_box_Job_Data', 'sjb_meta_box_output'), 'jobpost', 'normal');
     }
 

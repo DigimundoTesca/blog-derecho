@@ -44,7 +44,8 @@ class Simple_Job_Board_Settings_Job_Features {
      */
     public function sjb_add_settings_tab($tabs) {
 
-        $tabs['job_features'] = esc_html__('Job Features', 'simple-job-board');
+        $tabs['job_features'] = esc_html__('
+Características del trabajo', 'simple-job-board');
         return $tabs;
     }
 

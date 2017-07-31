@@ -21,10 +21,10 @@ ob_start();
 $page_slug = sjb_get_slugs();
 $slug = ( get_option('permalink_structure') ) ? $page_slug : '';
 
-echo '<div class="no-job-listing"><p>' . esc_html__('No jobs found.', 'simple-job-board') . '</p>';
+echo '<div class="no-job-listing"><p>' . esc_html__('No existen empleos publicados.', 'simple-job-board') . '</p>';
 
 if ( ( NULL != filter_input( INPUT_GET, 'selected_category' ) || NULL != filter_input( INPUT_GET, 'selected_jobtype' ) || NULL != filter_input( INPUT_GET, 'selected_location' ) || filter_input( INPUT_GET, 'search_keywords' ) ) ) {
-    echo '<p><a href="' . esc_url(home_url('/')) . $slug . '" class="btn btn-primary">' . __( 'Back to Jobs Page', 'simple-job-board') . '</a></p></div>';
+    echo '<p><a href="' . esc_url(home_url('/')) . $slug . '" class="btn btn-primary">' . __( 'Regresar', 'simple-job-board') . '</a></p></div>';
 } else {
    echo '</div>'; 
 }

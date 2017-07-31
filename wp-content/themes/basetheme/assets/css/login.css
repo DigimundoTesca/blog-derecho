@@ -1,0 +1,30 @@
+body {
+  background-image: url(../images/bck3.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.login div#login {
+  background-color: rgba(255,255,255,.25);
+  padding: 40px 30px;
+}
+body.login div#login h1 a {
+  border-radius: 10px;
+  background-image: url(../images/Logo.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+body.login div#login p#nav a {
+  background-color: rgba(0,0,0,.25);
+  color: #FFFFFF;
+}
+body.login div#login p#backtoblog a {
+  background-color: rgba(0,0,0,.25);
+  color: #FFFFFF;
+}

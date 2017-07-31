@@ -664,7 +664,7 @@ if (!function_exists('sjb_get_the_excerpt')) {
      */
     function sjb_get_the_excerpt() {
         $excerpt = '<p>' . trim(preg_replace('/<a[^>]*>(.*)<\/a>/iU', '', get_the_excerpt())) . '</p>';
-        $more = '<p><a href="' . get_the_permalink() . '" class="btn btn-primary">' . esc_html__('Read More', 'simple-job-board') . '</a></p>';
+        $more = '<p><a href="' . get_the_permalink() . '" class="btn btn-primary">' . esc_html__('Leer más', 'simple-job-board') . '</a></p>';
         return apply_filters( 'sjb_get_the_excerpt', $excerpt . $more, $excerpt, $more );
     }
 

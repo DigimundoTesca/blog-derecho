@@ -54,15 +54,22 @@ Text Domain: Derecho Anahuac
 h1,h2,h3,h4 {
   text-align: center;
   font-family: 'Varela Round', sans-serif;
+  overflow-wrap: break-word;
 }
 h1 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
 }
 h4 {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
 }
 body {
   font-family: 'Titillium Web', sans-serif;
@@ -124,7 +131,6 @@ footer {
 #footinfo {
   text-align: center;
   padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 /*Menu behavior*/
 #mobileMenu ul {
@@ -261,7 +267,6 @@ footer {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 30px;
 }
 #info p {
   margin-top: 0 !important;
@@ -293,6 +298,11 @@ footer {
   width: 90%;
   margin: 30px auto;
   text-align: justify;
+}
+#mainContainer .card-description {
+  width: 100%;
+  margin: 0;
+  line-height: 1.3em;
 }
 /*Events page*/
 .eventContainer {
@@ -328,13 +338,9 @@ div.posts > * {
   height: auto;
 }
 .author {
-  display: inline;
   flex-direction: row;
   align-items: center;
   padding-left: inherit;
-}
-.author > *{
-  display: inline-block;
 }
 .single_author {
   margin-top: 30px;
@@ -463,9 +469,10 @@ span.post_by {
 }
 /*Job Board styles*/
 .sjb-container {
-  max-width: 90%;
-  min-width: 90%;
+  max-width: 80%;
+  min-width: 80%;
   margin: 0 auto;
+  opacity: 0.9;
 }
 .sjb-page {
   font-family: "Roboto", sans-serif;
@@ -666,7 +673,24 @@ form a:active,
   max-width: 90%;
   margin: 0 auto;
 }
-
+/*Styles for form inputs on contact*/
+div.wpcf7 {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form.wpcf7-form {
+    max-width: 450px;
+    width: 100%;
+}
+.wpcf7-form-control {
+  width: 100%;
+  max-width: 450px;
+}
 /*Styles for posts page: publish by*/
 @media screen and (min-width: 360px){
   .author {
@@ -779,6 +803,12 @@ form a:active,
   /*Single Posts styles*/
   .single_post_image {
     height: 200px;
+  }
+  .single_post_image img {
+    bottom: -25%;
+  }
+  #mainContainer .card-description {
+    line-height: 1.8em;
   }
 }
 

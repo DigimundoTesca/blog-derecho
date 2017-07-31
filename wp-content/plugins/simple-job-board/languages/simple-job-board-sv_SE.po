@@ -570,7 +570,7 @@ msgid "Add-ons"
 msgstr "Tillägg"
 
 #: public/partials/simple-job-board-template-functions.php:626
-msgid "Read More"
+msgid "Leer más"
 msgstr "Läs mer"
 
 #: admin/class-simple-job-board-admin-add-ons.php:47

@@ -748,11 +748,11 @@ msgid "Browse"
 msgstr "Kiezen"
 
 #: pulic/class-simple-job-board-public.php:128
-msgid "No file chosen"
+msgid "No has seleccionado archivos"
 msgstr "Kies uw bestand"
 
 #: templates/listing/grid-view templates/listing/list-view
-msgid "Read More"
+msgid "Leer más"
 msgstr "Lees meer"
 
 #. Plugin Name of the plugin/theme

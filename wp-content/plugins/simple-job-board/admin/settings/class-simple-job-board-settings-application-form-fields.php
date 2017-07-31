@@ -42,7 +42,7 @@ class Simple_Job_Board_Settings_Application_Form_Fields {
      * @return   array  $tabs  Merge array of Settings Tab with Application Form Fields Tab.
      */
     public function sjb_add_settings_tab( $tabs ) {
-        $tabs['application_form_fields'] = esc_html__('Application Form Fields', 'simple-job-board');
+        $tabs['application_form_fields'] = esc_html__('Campos del formulario de solicitud', 'simple-job-board');
         return $tabs;
     }
 
@@ -57,19 +57,20 @@ class Simple_Job_Board_Settings_Application_Form_Fields {
         <div id="settings-application_form_fields" class="sjb-admin-settings" style="display: none;">
             <?php
             $field_types = array(
-                'text'      => esc_html__('Text Field', 'simple-job-board'),
-                'text_area' => esc_html__('Text Area', 'simple-job-board'),
+                'text'      => esc_html__('Campo de texto', 'simple-job-board'),
+                'text_area' => esc_html__('Área de texto', 'simple-job-board'),
                 'email'     => esc_html__('Email', 'simple-job-board'),
-                'phone'     => esc_html__('Phone', 'simple-job-board'),
-                'date'      => esc_html__('Date', 'simple-job-board'),
-                'checkbox'  => esc_html__('Check Box', 'simple-job-board'),
-                'dropdown'  => esc_html__('Drop Down', 'simple-job-board'),
+                'phone'     => esc_html__('Teléfono', 'simple-job-board'),
+                'date'      => esc_html__('Fecha', 'simple-job-board'),
+                'checkbox'  => esc_html__('Casilla verificación', 'simple-job-board'),
+                'dropdown'  => esc_html__('Desplegable', 'simple-job-board'),
                 'radio'     => esc_html__('Radio', 'simple-job-board'),
             );
 
             $field_types = apply_filters('sjb_form_field_types', $field_types);
             ?>
-            <h4 class="first"><?php esc_html_e('Default Application Form Fields', 'simple-job-board'); ?></h4>
+            <h4 class="first"><?php esc_html_e('Default 
+Campos de formulario de solicituds', 'simple-job-board'); ?></h4>
             <div class="sjb-section settings-fields">
                 <form method="post" id="job_app_form">
                     <ul id="settings_app_form_fields">

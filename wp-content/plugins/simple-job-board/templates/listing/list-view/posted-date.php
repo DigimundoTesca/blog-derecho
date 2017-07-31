@@ -20,7 +20,7 @@ ob_start();
 <div class="col-md-3 col-sm-4 col-xs-12">
     <?php if ($job_posting_time = sjb_get_the_job_posting_time()) {
         ?>
-        <div class="job-date"><i class="fa fa-calendar-check-o"></i><?php printf(__('Posted %s ago', 'simple-job-board'), sjb_get_the_job_posting_time() ); ?></div>
+        <div class="job-date"><i class="fa fa-calendar-check-o"></i><?php printf(__('Publicado hace %s', 'simple-job-board'), sjb_get_the_job_posting_time() ); ?></div>
     <?php } ?>
 </div>
 <!-- ==================================================
