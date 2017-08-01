@@ -90,7 +90,7 @@ body {
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
   background-image: url(assets/images/bck3.jpg);
   background-repeat:no-repeat;
-  background-position: center center;
+  background-position: right top;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -690,6 +690,32 @@ form.wpcf7-form {
 .wpcf7-form-control {
   width: 100%;
   max-width: 450px;
+}
+/*Styles for images included on texts*/
+.alignleft {
+  display: inline;
+  float: left;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+}
+
+.aligncenter,
+.alignnone {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
 }
 /*Styles for posts page: publish by*/
 @media screen and (min-width: 360px){
