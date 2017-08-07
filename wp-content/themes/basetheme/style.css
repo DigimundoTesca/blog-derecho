@@ -72,10 +72,19 @@ h4 {
   font-size: 20px;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Titillium Web', sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
+  background-image: url(assets/images/bck3.jpg);
+  background-repeat:no-repeat;
+  background-position: right top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 a {
   cursor: pointer;
@@ -86,17 +95,9 @@ a:link, a:visited, a:active {
 a:hover {
   color: #fff;
 }
-body {
-  background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
-  background-image: url(assets/images/bck3.jpg);
-  background-repeat:no-repeat;
-  background-position: right top;
-  background-size: cover;
-  background-attachment: fixed;
-}
 footer {
   padding-top: 20px;
-  width: 80%;
+  width: 100%;
   background-color: rgba(255,255,255,0.9);
   margin: 0 auto;
 }
@@ -198,7 +199,7 @@ footer {
 /*Banner styles*/
 #banner {
   width: 100%;
-  height: 300px;
+  height: 250px;
   position: relative;
   background-image: linear-gradient( 135deg, #FAD7A1 0%, #E96D71 100%);
   background-repeat: no-repeat;
@@ -245,15 +246,15 @@ footer {
 }
 /*Container styles*/
 #mainContainer {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  padding: 5%;
+  padding: 0;
   padding-bottom: 20px;
   background-color: rgba(255,255,255,0.9);
   text-align: center;
 }
 #paginationContainer {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -497,6 +498,11 @@ span.post_by {
   left: 0;
   bottom: 0;
 }
+/*Single events styles*/
+.eventContainer {
+  display: inline-flex !important; 
+  flex-direction: column;
+}
 /*Comment Form in posts page styles*/
 .postsComment  a,
 .postsComment  a:link,
@@ -739,9 +745,16 @@ form.wpcf7-form {
 }
 
 /*Tablet screen styles*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {  
+  footer {
+    padding-top: 20px;
+    width: 80%;
+    background-color: rgba(255,255,255,0.9);
+    margin: 0 auto;
+  }
   #banner {
-    height: 400px;
+    width: 80%;
+    height: 300px;
     text-shadow: 3px 3px #000;
   }
   #banner h1 {
@@ -768,7 +781,7 @@ form.wpcf7-form {
     float: right;
   }
   #largeMenu .menu-links li {
-    width: 60px;
+    width: 40px;
     height: 30px;
     line-height: 30px;
     display: inline-flex;
@@ -823,6 +836,12 @@ form.wpcf7-form {
   .date time {
     margin-left: 15px;
   }
+  /*Container styles*/
+  #mainContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+  }
   #mainContainer .post_image {
     height: 200px;
   }
@@ -836,11 +855,17 @@ form.wpcf7-form {
   #mainContainer .card-description {
     line-height: 1.8em;
   }
+  #paginationContainer {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 900px) {
   #bannerMenu .logo {
     font-size: 30px;
+  }
+  #largeMenu .menu-links li {
+    width: 50px;
   }
   #largeMenu .menu-links a {
     font-size: 18px;
@@ -871,7 +896,7 @@ form.wpcf7-form {
 /*PC screen styles*/
 @media screen and (min-width: 1200px) {
   #banner {
-    height: 500px;
+    height: 400px;
   }
   #banner h1 {
     font-size: 80px;
@@ -902,7 +927,6 @@ form.wpcf7-form {
   #largeMenu .menu-links a {
     list-style: none;
     text-decoration: none;
-    margin-left: 8px;
     font-size: 20px;
   }
   #largeMenu .menu-links a:hover {
