@@ -121,17 +121,18 @@ function my_widgets (){
 add_action( 'widgets_init', 'my_widgets');
 
 //Buscar sólo posts o entradas
-// if(is_page('blog')){
-//   function buscador_mostrar_solo_posts($query)
-//   {
-//     if ($query->is_search)
-//     {
-//       $query->set('post_type', 'post');
-//     }
-//     return $query;
-//   }
-//   add_filter('pre_get_posts', 'buscador_mostrar_solo_posts');
-// }
+function buscador_mostrar_solo_posts($query)
+{
+  if(is_page('blog'))
+  {
+    if ($query->is_search)
+    {
+      $query->set('post_type', 'post');
+    }
+    return $query;
+  }
+}
+add_filter('pre_get_posts', 'buscador_mostrar_solo_posts');
 
 
 ?>
