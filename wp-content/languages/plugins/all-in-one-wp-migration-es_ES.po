@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - All-in-One WP Migration - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-28 22:55:22+0000\n"
+"PO-Revision-Date: 2017-08-02 20:36:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,29 @@ msgstr ""
 "Language: es\n"
 "Project-Id-Version: Plugins - All-in-One WP Migration - Stable (latest release)\n"
 
-#: functions.php:1002
+#: lib/view/backups/index.php:60
+msgid "2GB+"
+msgstr "2GB+"
+
+#: lib/model/import/class-ai1wm-import-validate.php:128
+msgid "Done unpacking archive."
+msgstr "Descomprimir el archivo realizado."
+
+#: lib/model/import/class-ai1wm-import-validate.php:62
+#: lib/model/import/class-ai1wm-import-validate.php:145
+msgid "Unpacking archive...<br />%d%% complete"
+msgstr "Desempaquetado archivo...<br />%d%% completo"
+
+#: lib/model/export/class-ai1wm-export-database-file.php:64
+msgid "Done archiving database."
+msgstr "Archivo de la base de datos completado."
+
+#: lib/model/export/class-ai1wm-export-database-file.php:55
+#: lib/model/export/class-ai1wm-export-database-file.php:84
+msgid "Archiving database...<br />%d%% complete"
+msgstr "Archivo de la base de datos...<br />%d%% completado."
+
+#: functions.php:1028
 msgid "Unable to authenticate the secret key."
 msgstr "No se puede autentificar la clave secreta."
 
@@ -21,7 +43,7 @@ msgid "Restoring database...<br />%d%% complete"
 msgstr "Restauración completa de la base de datos...<br />%d%%"
 
 #: lib/model/export/class-ai1wm-export-database.php:61
-#: lib/model/export/class-ai1wm-export-database.php:161
+#: lib/model/export/class-ai1wm-export-database.php:154
 msgid "Exporting database...<br />%d%% complete"
 msgstr "Exportar base de datos...<br />%d%% completa"
 
@@ -31,14 +53,14 @@ msgid "Checking extensions compatibility..."
 msgstr "Comprobación de compatibilidad de extensiones..."
 
 #: lib/model/import/class-ai1wm-import-database.php:622
-msgid "Done restoring database..."
+msgid "Done restoring database."
 msgstr "Restaurada la base de datos..."
 
-#: lib/controller/class-ai1wm-main-controller.php:711
+#: lib/controller/class-ai1wm-main-controller.php:712
 msgid "Monthly"
 msgstr "Mensual"
 
-#: lib/controller/class-ai1wm-main-controller.php:707
+#: lib/controller/class-ai1wm-main-controller.php:708
 msgid "Weekly"
 msgstr "Semanal"
 
@@ -55,8 +77,8 @@ msgid "Do <strong>not</strong> export must-use plugins (files)"
 msgstr "<strong>No</strong> exportar plugins de uso obligatorio (archivos)"
 
 #: lib/model/import/class-ai1wm-import-mu-plugins.php:43
-msgid "Done activating mu-plugins..."
-msgstr "mu-plugins activados..."
+msgid "Done activating mu-plugins."
+msgstr "mu-plugins activados."
 
 #: lib/model/import/class-ai1wm-import-mu-plugins.php:31
 msgid "Activating mu-plugins..."
@@ -73,10 +95,6 @@ msgstr "Box"
 #: lib/view/export/advanced-settings.php:38
 msgid "Do <strong>not</strong> export inactive themes (files)"
 msgstr "<strong>No</strong> exportar temas inactivos (archivos)"
-
-#: lib/view/backups/index.php:57
-msgid "The file is too large for your hosting plan."
-msgstr "El archivo es demasiado grande para tu plan de alojamiento."
 
 #: lib/view/export/advanced-settings.php:85
 msgid "Do <strong>not</strong> replace email domain (sql)"
@@ -155,8 +173,8 @@ msgid "OneDrive"
 msgstr "OneDrive"
 
 #: lib/model/import/class-ai1wm-import-blogs.php:124
-msgid "Done preparing blogs..."
-msgstr "Preparar blog realizado..."
+msgid "Done preparing blogs."
+msgstr "Preparar blog realizado."
 
 #: lib/model/import/class-ai1wm-import-blogs.php:113
 msgid "Unable to import <strong>WordPress Network</strong> into WordPress <strong>Single</strong> site."
@@ -176,8 +194,8 @@ msgstr "Preparando blogs..."
 
 #: lib/model/export/class-ai1wm-export-resolve.php:37
 #: lib/model/import/class-ai1wm-import-resolve.php:37
-msgid "Done resolving URL address..."
-msgstr "Resolver la dirección URL realizado..."
+msgid "Done resolving URL address."
+msgstr "Resolver la dirección URL realizado."
 
 #: lib/model/export/class-ai1wm-export-resolve.php:31
 #: lib/model/import/class-ai1wm-import-resolve.php:31
@@ -264,10 +282,10 @@ msgstr "ServMask"
 msgid "Migration tool for all your blog data. Import or Export your blog content with a single click."
 msgstr "Herramienta de migración para todos los datos de tu blog. Importa o Exporta el contenido de tu blog con un solo clic."
 
-#. #-#-#-#-#  all-in-one-wp-migration-code.pot (All-in-One WP Migration 6.54) 
+#. #-#-#-#-#  all-in-one-wp-migration-code.pot (All-in-One WP Migration 6.55) 
 #. #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  all-in-one-wp-migration-code.pot (All-in-One WP Migration 6.54) 
+#. #-#-#-#-#  all-in-one-wp-migration-code.pot (All-in-One WP Migration 6.55) 
 #. #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://servmask.com/"
@@ -461,32 +479,32 @@ msgstr "Tengo ideas para mejorar este plugin"
 msgid "I would like to review this plugin"
 msgstr "Me gustaría valorar este plugin"
 
-#: lib/view/backups/index.php:128 lib/view/export/index.php:60
+#: lib/view/backups/index.php:126 lib/view/export/index.php:60
 #: lib/view/import/index.php:57
 msgid "Leave Feedback"
 msgstr "Deja un comentario"
 
-#: lib/view/backups/index.php:91
+#: lib/view/backups/index.php:89
 msgid "Create backup"
 msgstr "Crear backup"
 
-#: lib/view/backups/index.php:87
+#: lib/view/backups/index.php:85
 msgid "There are no backups available at this time, why not create a new one?"
 msgstr "No hay copias de seguridad disponibles en este momento, ¿por qué no crear ahora una nueva?"
 
-#: lib/view/backups/index.php:77
+#: lib/view/backups/index.php:76
 msgid "Delete"
 msgstr "Borrar"
 
-#: lib/view/backups/index.php:73
+#: lib/view/backups/index.php:72
 msgid "Restore"
 msgstr "Restaurar"
 
-#: lib/view/backups/index.php:69
+#: lib/view/backups/index.php:68
 msgid "Download"
 msgstr "Bajar"
 
-#: lib/view/backups/index.php:61
+#: lib/view/backups/index.php:56
 msgid "ago"
 msgstr "hace"
 
@@ -519,25 +537,13 @@ msgstr "¡Tus datos se han importado correctamente!"
 msgid "Restoring %d files...<br />%d%% complete"
 msgstr "Restauración %d archivos ... <br />%d%% completada"
 
-#: lib/model/import/class-ai1wm-import-validate.php:73
-msgid "Unable to get the file size of <strong>%s</strong>"
-msgstr "No se puede obtener el tamaño de archivo de <strong>%s</strong>"
-
-#: lib/model/import/class-ai1wm-import-validate.php:115
-msgid "Invalid archive file. It should contain <strong>package.json</strong> file."
-msgstr "Archivo no válido. Debe contener el archivo <strong>package.json</strong>."
-
-#: lib/model/import/class-ai1wm-import-validate.php:45
-msgid "Unpacking archive..."
-msgstr "Desempaquetando el archivo..."
-
 #: lib/model/export/class-ai1wm-export-download.php:31
 msgid "Renaming exported file..."
 msgstr "Renombrando el archivo exportado..."
 
-#: lib/model/export/class-ai1wm-export-database.php:138
-msgid "Done exporting database..."
-msgstr "Exportar la base de datos realizado..."
+#: lib/model/export/class-ai1wm-export-database.php:131
+msgid "Done exporting database."
+msgstr "Exportar la base de datos realizado."
 
 #: lib/model/export/class-ai1wm-export-content.php:69
 #: lib/model/export/class-ai1wm-export-content.php:105
@@ -562,19 +568,19 @@ msgstr "Realizada la creación de un archivo vacío."
 msgid "Creating an empty archive..."
 msgstr "Creando un archivo vacío..."
 
-#: lib/controller/class-ai1wm-main-controller.php:399
 #: lib/controller/class-ai1wm-main-controller.php:400
+#: lib/controller/class-ai1wm-main-controller.php:401
 #: lib/view/backups/index.php:31
 msgid "Backups"
 msgstr "Copias de seguridad"
 
-#: lib/controller/class-ai1wm-main-controller.php:389
 #: lib/controller/class-ai1wm-main-controller.php:390
+#: lib/controller/class-ai1wm-main-controller.php:391
 msgid "Import"
 msgstr "Importar"
 
-#: lib/controller/class-ai1wm-main-controller.php:379
 #: lib/controller/class-ai1wm-main-controller.php:380
+#: lib/controller/class-ai1wm-main-controller.php:381
 msgid "Export"
 msgstr "Exportar"
 
