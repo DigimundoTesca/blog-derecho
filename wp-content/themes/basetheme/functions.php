@@ -120,19 +120,16 @@ function my_widgets (){
 }
 add_action( 'widgets_init', 'my_widgets');
 
-//Buscar sólo posts o entradas
-function buscador_mostrar_solo_posts($query)
-{
-  if(is_page('blog'))
-  {
-    if ($query->is_search)
-    {
-      $query->set('post_type', 'post');
+
+//Search only posts on blog page
+function my_home_category( $query ) {
+    if ( !is_admin() && $query->is_main_query() ) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
     }
-    return $query;
   }
 }
-add_filter('pre_get_posts', 'buscador_mostrar_solo_posts');
+add_action( 'pre_get_posts', 'my_home_category' );
 
 
 ?>
