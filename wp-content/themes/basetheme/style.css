@@ -144,15 +144,16 @@ footer {
   height: 246px;
   position: absolute;
   right: -35px;
-  transition: 1s;
+  transition: all 1s ease-in-out;
   background-image: url(assets/images/menubck.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #mobileMenu.active {
+  display: none;
   right: -500px;
-  transition: 1s;
+  transition: all 1s ease-in-out;
 }
 #mobileMenu .links li {
   text-decoration: none;
@@ -160,16 +161,6 @@ footer {
   text-align: center;
   border-bottom: 1px solid #FFF;
   line-height: 40px;
-}
-.linksli {
-  visibility: hidden;
-  display: none;
-  transition: 1s;
-}
-.linksli.active {
-  visibility: visible;
-  display: initial;
-  transition: 1s;
 }
 #mobileMenu .links li:hover {
   background-color: #182633;
