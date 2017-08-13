@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the 2.3 package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-04-17 20:46:27+0000\n"
+"PO-Revision-Date: 2017-08-09 20:19:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,11 +12,11 @@ msgstr ""
 
 #: app/controller/javascript.php:462
 msgid "Please enter a valid Registration URL, starting with https:// or http://."
-msgstr ""
+msgstr "Zadejte, prosím, platnou URL adresu registrace, začínající https:// nebo http://"
 
 #: app/view/event/single.php:206
 msgid "No data"
-msgstr ""
+msgstr "Žádná data"
 
 #: public/admin/plugins/ics/import_feed.php:8
 msgid "unlimited"
@@ -50,19 +50,19 @@ msgstr "Vzdělání"
 
 #: app/view/admin/settings.php:215
 msgid "Venue/Business"
-msgstr ""
+msgstr "Místo konání"
 
 #: app/view/admin/settings.php:216
 msgid "Artist/Performer"
-msgstr ""
+msgstr "Umělec/Účinkující"
 
 #: app/view/admin/settings.php:217
 msgid "Church/Spiritual"
-msgstr ""
+msgstr "Církev/Duchovní"
 
 #: app/view/admin/settings.php:218
 msgid "Association/Group"
-msgstr ""
+msgstr "Sdružení/Skupina"
 
 #: app/view/admin/settings.php:219
 msgid "Other"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: app/view/event/single.php:228
 msgid "This post was imported from a CSV/ICS file."
-msgstr ""
+msgstr "Tento příspěvek byl importován z CSV/ICS souboru."
 
 #: app/view/admin/tickets.php:71 app/view/admin/tickets.php:86
 #: app/view/admin/tickets.php:96 app/view/admin/tickets.php:107
@@ -528,8 +528,8 @@ msgid "Cost options not available, this event was imported from an external cale
 msgstr "Možnosti nákladů nejsou k dispozici, tato událost byla importována z externího kalendáře."
 
 #: public/admin/box_event_cost.php:35
-msgid "This event was created using Timely Network. Sign in with the accouunt %s to see the Ticket options."
-msgstr "Tato událost byla vytvořena pomocí sítě Time.ly. Přihlašte se ke svému účtu %s, abyste viděli možnosti lístků."
+msgid "This event was created using Timely Network. Sign in with the account %s to see the Ticket options."
+msgstr ""
 
 #: public/admin/box_event_cost.php:39
 msgid "Sign In for Timely Network"
@@ -1806,7 +1806,7 @@ msgstr "Varování:"
 msgid "It is currently not supported to embed more than one calendar in the same page. Do not attempt to embed the calendar via shortcode in a page that already displays the calendar."
 msgstr "Momentálně není možné vložit více než jeden kalendář na stejnou stránku. Nevkládejte shortkódy k zobrazení kalendáře na stránku, která již nějaký kalendář zobrazuje."
 
-#: lib/import-export/ics.php:876
+#: lib/import-export/ics.php:881
 msgid "Tickets: "
 msgstr "Vstupenky:"
 

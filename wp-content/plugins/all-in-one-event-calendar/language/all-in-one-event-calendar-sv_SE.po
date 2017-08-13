@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the 2.3 package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-21 20:32:50+0000\n"
+"PO-Revision-Date: 2017-08-09 20:19:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -522,7 +522,7 @@ msgid "Cost options not available, this event was imported from an external cale
 msgstr ""
 
 #: public/admin/box_event_cost.php:35
-msgid "This event was created using Timely Network. Sign in with the accouunt %s to see the Ticket options."
+msgid "This event was created using Timely Network. Sign in with the account %s to see the Ticket options."
 msgstr ""
 
 #: public/admin/box_event_cost.php:39
@@ -1798,7 +1798,7 @@ msgstr "Varning:"
 msgid "It is currently not supported to embed more than one calendar in the same page. Do not attempt to embed the calendar via shortcode in a page that already displays the calendar."
 msgstr "Det går för närvarande inte att bädda in mer än en kalender på samma sida. Försök inte att bädda in kalendern via snabbkod på en sida som redan visar kalendern."
 
-#: lib/import-export/ics.php:876
+#: lib/import-export/ics.php:881
 msgid "Tickets: "
 msgstr ""
 
@@ -2448,11 +2448,11 @@ msgstr "Etiketter"
 
 #: app/view/calendar/view/agenda.php:180
 msgid "Collapse All"
-msgstr "Fäll ihop alla"
+msgstr "Kollapsa alla"
 
 #: app/view/calendar/view/agenda.php:181
 msgid "Expand All"
-msgstr "Fäll ut alla"
+msgstr "Expandera alla"
 
 #: app/view/calendar/view/agenda.php:204
 msgid "There are no upcoming events to display at this time."
@@ -2600,7 +2600,7 @@ msgstr "Månad/vecka/dag"
 
 #: app/view/admin/theme-options.php:151
 msgid "Agenda view"
-msgstr "Dagordning"
+msgstr "Programvy"
 
 #: app/view/admin/theme-options.php:169
 msgid "Save Options"
@@ -3205,8 +3205,8 @@ msgstr "Tillgängliga vyer"
 #: app/model/settings.php:432
 msgid "Agenda"
 msgid_plural "Agenda"
-msgstr[0] "Dagordning"
-msgstr[1] ""
+msgstr[0] "Program"
+msgstr[1] "Program"
 
 #: app/model/settings.php:443
 msgid "Day"

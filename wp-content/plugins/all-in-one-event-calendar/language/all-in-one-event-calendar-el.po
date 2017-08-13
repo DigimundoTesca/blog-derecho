@@ -522,7 +522,7 @@ msgid "Cost options not available, this event was imported from an external cale
 msgstr ""
 
 #: public/admin/box_event_cost.php:35
-msgid "This event was created using Timely Network. Sign in with the accouunt %s to see the Ticket options."
+msgid "This event was created using Timely Network. Sign in with the account %s to see the Ticket options."
 msgstr ""
 
 #: public/admin/box_event_cost.php:39
@@ -1798,7 +1798,7 @@ msgstr "Προειδοποιήσης:"
 msgid "It is currently not supported to embed more than one calendar in the same page. Do not attempt to embed the calendar via shortcode in a page that already displays the calendar."
 msgstr "Αυτή την στιγμή δεν υποστηρίζεται η ενσωμάτωση περισσότερων από ένα ημερολογίων στην ίδια σελίδα.Μην δοκιμάσετε να ενσωματώσετε το ημερολόγιο με μικρό-κώδικα στην σελίδα που εμφανίζεται ήδη το ημερολόγιο."
 
-#: lib/import-export/ics.php:876
+#: lib/import-export/ics.php:881
 msgid "Tickets: "
 msgstr ""
 

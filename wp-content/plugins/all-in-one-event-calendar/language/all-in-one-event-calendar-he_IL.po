@@ -522,7 +522,7 @@ msgid "Cost options not available, this event was imported from an external cale
 msgstr ""
 
 #: public/admin/box_event_cost.php:35
-msgid "This event was created using Timely Network. Sign in with the accouunt %s to see the Ticket options."
+msgid "This event was created using Timely Network. Sign in with the account %s to see the Ticket options."
 msgstr ""
 
 #: public/admin/box_event_cost.php:39
@@ -1800,7 +1800,7 @@ msgstr "אזהרה:"
 msgid "It is currently not supported to embed more than one calendar in the same page. Do not attempt to embed the calendar via shortcode in a page that already displays the calendar."
 msgstr "אין כרגע תמיכה בהטמעת יותר מלוח אחד באותו עמוד. אל תנסה להטמיע את הלוח באמצעות shortcode בעמוד שמציג כבר את הלוח."
 
-#: lib/import-export/ics.php:876
+#: lib/import-export/ics.php:881
 msgid "Tickets: "
 msgstr ""
 
