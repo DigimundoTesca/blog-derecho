@@ -20,10 +20,12 @@ add_action( 'after_setup_theme', 'theme_setup');
 function _adding_stylesheet(){
   //Style register
   wp_register_style('ihover',get_template_directory_uri().'/assets/css/ihover.css',array(),'1.0 ');
+  wp_register_style('jquery-ui',get_template_directory_uri().'/assets/css/jquery-ui.css',array(),'1.0 ');
   wp_register_style('card',get_template_directory_uri().'/assets/css/card.css',array(),'1.0 ');
   wp_register_style('style',get_template_directory_uri('ihover').'/style.css',array(),'1.0 ');
   //Style display
   wp_enqueue_style('ihover');
+  wp_enqueue_style('jquery-ui');
   wp_enqueue_style('card');
   wp_enqueue_style('style');
 }
@@ -42,7 +44,11 @@ add_action( 'init', 'adding_menus' );
 function _adding_scripts() {
   //JS file regist
   wp_register_script('my_custom_script', get_template_directory_uri() . '/assets/js/theme-scripts.js', array('jquery'),'1', true);
+  wp_register_script('external', get_template_directory_uri() . '/assets/js/external-jquery.js', true);
+  wp_register_script('jquery-ui', get_template_directory_uri() . '/assets/js/jquery-ui.js', true);
   //Js load
+  wp_enqueue_script('external');
+  wp_enqueue_script('jquery-ui');
   wp_enqueue_script('my_custom_script');
   wp_enqueue_script('jquery');
 }

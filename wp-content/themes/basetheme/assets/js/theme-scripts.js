@@ -16,4 +16,7 @@ jQuery(document).ready(function(){
   $('.post-module').hover(function(){
     $(this).toggleClass('hover');
   });
+
 });
+  // Tabs functions
+  $('#tabs').tabs();

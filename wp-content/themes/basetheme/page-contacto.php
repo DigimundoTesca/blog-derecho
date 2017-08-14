@@ -55,7 +55,25 @@
             </div>
           </div>
         </div>
-        <?php echo do_shortcode('[contact-form-7 id="122" title="Formulario de contacto"]'); ?>
+
+        <!-- Tabs -->
+        <h2 class="demoHeaders">Tabs</h2>
+        <div id="tabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
+          <ul >
+            <li><a href="#tabs-1">Contacto</a></li>
+            <li><a href="#tabs-2">Artículo</a></li>
+            <li><a href="#tabs-3">Puesto</a></li>
+          </ul>
+          <div id="tabs-1">
+            <?php echo do_shortcode('[contact-form-7 id="122" title="Formulario de contacto"]'); ?>
+          </div>
+          <div id="tabs-2">
+            <?php echo do_shortcode('[contact-form-7 id="162" title="Articulo"]'); ?>
+          </div>
+          <div id="tabs-3">
+            <?php echo do_shortcode('[contact-form-7 id="161" title="Trabajo"]'); ?>
+          </div>
+        </div>
       </div>
     <?php endwhile ?>
     <?php get_footer(); ?>
