@@ -16,16 +16,12 @@
         <div class="post-content">
           <div class="category">Artículo</div>
           <h1 class="title">Para publicar un artículo</h1>
-          <h2 class="sub_title">Envia un archivo comprimido en formato "ZIP" conteniendo:</h2>
+          <h2 class="sub_title">Entra en la sección "artículo" y agregalo.</h2>
           <p class="card-description">
-            Documento a publicar en formato .doc o .docx de Microsoft Office Word con el siguiente formato:<br>
-            ->Fuente: Georgia, tamaño 12 <br>
-            ->Interlineado: 1,5 <br>
-            ->Por lo menos una imagen contenida en el documento y por separado en formato png.<br>
+            -> Recuerda agregar una imagen por separado en formato png ó jpeg.<br>
             Si no posee una imagem, háganoslo saber y conseguiremos una por usted.<br>
-            Curriculum e información de contacto.
             No se aceptarán:<br>
-            ->Trabajos que no posean estructura o el formato solicitado.<br>
+            ->Trabajos que no posean estructura.<br>
             Su trabajo será verificado y publicado en cuanto se finalice su revisión.</p>
           </div>
         </div>
@@ -40,32 +36,26 @@
           <div class="post-content">
             <div class="category">Oferta de trabajo</div>
             <h1 class="title">Para publicar una oferta</h1>
-            <h2 class="sub_title">Envia un archivo comprimido en formato "ZIP" conteniendo:</h2>
+            <h2 class="sub_title">Entra en la sección "Puesto" y agregalo.</h2>
             <p class="card-description">
-              Documento en formato .doc o .docx de Microsoft Office Word con el siguiente contenido:<br>
-              -> Nombre de puesto.<br>
-              -> Descripción completa del puesto.<br>
-              -> Nombre completo de la empresa.<br>
-              -> Página web de la empresa.<br>
-              -> Nombre completo de persona que postula el puesto..<br>
-              -> Curriculum e información de contacto.<br>
+              Llena los campos solicitados y si gustas agregar una descripción extra, hazlo en la parte de mensaje.<br>
               No se aceptarán:<br>
-              ->Trabajos que no posean estructura o el formato solicitado.<br>
-              Su trabajo será verificado y publicado en cuanto se finalice su revisión.</p>
+              ->Puestos que no posean estructura o el formato solicitado.<br>
+              Su oferta será verificada y publicada en cuanto se finalice su revisión.</p>
             </div>
           </div>
         </div>
 
         <!-- Tabs -->
-        <h2 class="demoHeaders">Tabs</h2>
+        <h2 class="demoHeaders">Contacto</h2>
         <div id="tabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
           <ul >
-            <li><a href="#tabs-1">Contacto</a></li>
             <li><a href="#tabs-2">Artículo</a></li>
             <li><a href="#tabs-3">Puesto</a></li>
+            <li><a href="#tabs-1">Opinión</a></li>
           </ul>
           <div id="tabs-1">
-            <?php echo do_shortcode('[contact-form-7 id="122" title="Formulario de contacto"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="163" title="Contacto"]'); ?>
           </div>
           <div id="tabs-2">
             <?php echo do_shortcode('[contact-form-7 id="162" title="Articulo"]'); ?>
