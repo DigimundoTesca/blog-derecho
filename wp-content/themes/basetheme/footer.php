@@ -1,8 +1,8 @@
 <footer>
   <ul id="spherelink">
-    <li><a class="fa fa-facebook" href=""></a></li>
-    <li><a class="fa fa-twitter" href=""></a></li>
-    <li><a class="fa fa-linkedin" href=""></a></li>
+    <li><a class="fa fa-facebook" href="" target="_blank"></a></li>
+    <li><a class="fa fa-twitter" href="" target="_blank"></a></li>
+    <li><a class="fa fa-linkedin" href="" target="_blank"></a></li>
   </ul>
   <div id="footinfo">
     <p>Copyright &#169; <?php bloginfo(name); ?></p>
