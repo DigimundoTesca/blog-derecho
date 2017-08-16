@@ -1,8 +1,7 @@
 <footer>
   <ul id="spherelink">
-    <li><a class="fa fa-facebook" href=""></a></li>
-    <li><a class="fa fa-twitter" href=""></a></li>
-    <li><a class="fa fa-linkedin" href=""></a></li>
+    <li><a class="fa fa-twitter" href="https://twitter.com/safderechouan?lang=es" target="_blank"></a></li>
+    <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/sociedad-de-alumnos-derecho-b2816b146/" target="_blank"></a></li>
   </ul>
   <div id="footinfo">
     <p>Copyright &#169; <?php bloginfo(name); ?></p>
