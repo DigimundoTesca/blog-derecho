@@ -463,8 +463,8 @@ span.post_by {
 }
 /*Job Board styles*/
 .sjb-container {
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 100%;
+  min-width: 100%;
   margin: 0 auto;
   opacity: 0.9;
 }
@@ -853,6 +853,13 @@ form.wpcf7-form {
   }
   #paginationContainer {
     width: 80%;
+  }
+  /*Job Board styles*/
+  .sjb-container {
+    max-width: 80%;
+    min-width: 80%;
+    margin: 0 auto;
+    opacity: 0.9;
   }
 }
 

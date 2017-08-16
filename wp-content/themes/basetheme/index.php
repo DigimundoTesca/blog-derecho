@@ -4,6 +4,7 @@
   <div id="postsColumn">
     <?php while (have_posts()): the_post(); ?>
       <div id="eachPost">
+        <h3><?php the_title(); ?></h3>
         <div class="post_image">
           <div class="cut_image">
             <?php the_post_thumbnail(); ?>

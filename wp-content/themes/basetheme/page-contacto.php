@@ -19,7 +19,7 @@
           <h2 class="sub_title">Entra en la sección "artículo" y agregalo.</h2>
           <p class="card-description">
             -> Recuerda agregar una imagen por separado en formato png ó jpeg.<br>
-            Si no posee una imagem, háganoslo saber y conseguiremos una por usted.<br>
+            Si no posee una imágen, háganoslo saber y conseguiremos una por usted.<br>
             No se aceptarán:<br>
             ->Trabajos que no posean estructura.<br>
             Su trabajo será verificado y publicado en cuanto se finalice su revisión.</p>
